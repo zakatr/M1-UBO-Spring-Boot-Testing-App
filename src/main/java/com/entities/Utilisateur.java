@@ -1,7 +1,5 @@
 package com.entities;
 
-import java.time.LocalDate;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,12 +9,13 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Dog {
+public class Utilisateur {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id;
-	private String name;
-	private String race;
-	private LocalDate birthDate;	
-	
+	private Long id;
+	private String login;
+	private String motDePasse;
+	private String nomUsuel;
+	private String prenom;
+	private String mail;
 }
